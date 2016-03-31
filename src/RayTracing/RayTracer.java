@@ -167,7 +167,7 @@ public class RayTracer {
 
         // Put your ray tracing code here!
         //
-        // Write pixel color values in RGB format to rgbData:
+        // Write pixel Color values in Color format to rgbData:
         // Pixel [x, y] red component is in rgbData[(y * this.imageWidth + x) * 3]
         //            green component is in rgbData[(y * this.imageWidth + x) * 3 + 1]
         //             blue component is in rgbData[(y * this.imageWidth + x) * 3 + 2]
@@ -195,7 +195,7 @@ public class RayTracer {
     //////////////////////// FUNCTIONS TO SAVE IMAGES IN PNG FORMAT //////////////////////////////////////////
 
     /*
-     * Saves RGB data as an image in png format to the specified location.
+     * Saves Color data as an image in png format to the specified location.
      */
     public static void saveImage(int width, byte[] rgbData, String fileName)
     {
@@ -211,7 +211,7 @@ public class RayTracer {
     }
 
     /*
-     * Producing a BufferedImage that can be saved as png from a byte array of RGB values.
+     * Producing a BufferedImage that can be saved as png from a byte array of Color values.
      */
     public static BufferedImage bytes2RGB(int width, byte[] buffer) {
         int height = buffer.length / width / 3;
