@@ -1,11 +1,11 @@
 
-public class Point {
+public class MyVector {
 
     private int x;
     private int y;
     private int z;
 
-    public Point(int x, int y, int z) {
+    public MyVector(int x, int y, int z) {
         this.x = x;
         this.y = y;
         this.z = z;

@@ -8,7 +8,7 @@ public abstract class Surface {
         this.material = material;
     };
 
-    public abstract List<Point> get_intersections();
+    public abstract List<MyVector> get_intersections();
 
 }
 
